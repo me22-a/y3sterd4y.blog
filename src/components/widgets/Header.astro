@@ -1,0 +1,29 @@
+---
+import MenuIcon from "@icon/MenuIcon.svg";
+
+import { SITE_TITLE } from "../../consts";
+---
+
+<header class="top-0 h-[4.5rem] sticky flex justify-center bg-white drop-shadow-md">
+  <nav class="max-md:grid-cols-2 max-md:mx-5 w-[720px] mx-7 grid grid-cols-2">
+    <h5 class="py-2.5 flex items-center"><a href="/" class="font-bold">{SITE_TITLE}</a></h5>
+    <div class="max-md:hidden flex justify-end items-center gap-7 font-semibold">
+      <a class="hover:underline active:underline" href="/blog">Blog</a>
+      <a class="hover:underline active:underline" href="/about">About</a>
+      <a class="hover:underline active:underline" href="/works">Works</a>
+    </div>
+    <div class="md:hidden flex justify-end items-center">
+      <button type="button" class="p-0.5 border rounded-lg">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 -960 960 960"
+            width="24"
+            ><path d="M160-360v-80h640v80H160Zm0-160v-80h640v80H160Z"
+            ></path></svg
+          ></span>
+      </button>
+    </div>
+  </nav>
+</header>

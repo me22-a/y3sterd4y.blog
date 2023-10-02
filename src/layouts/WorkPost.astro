@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "./BaseLayout.astro";
+import FormattedDate from "@common/FormattedDate.astro";
+
+type Props = CollectionEntry<"work">["data"];
+
+const { title, pubDate, heroImage, description } = Astro.props;
+---
+
+<BaseLayout>
+  <section>
+    <article class="w-[100%] px-5 py-10">
+      <div class="prose grid grid-cols-1">
+        {heroImage && <img class="rounded-xl" src={heroImage} />}
+        <div class="title">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+          </div>
+          <h1>{title}</h1>
+          <hr />
+        </div>
+        <slot />
+      </div>
+    </article>
+  </section>
+</BaseLayout>

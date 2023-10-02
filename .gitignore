@@ -3,6 +3,8 @@ dist/
 # generated types
 .astro/
 
+src/components/images
+
 # dependencies
 node_modules/
 

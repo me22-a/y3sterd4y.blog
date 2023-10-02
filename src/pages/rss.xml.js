@@ -4,6 +4,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 export async function GET(context) {
 	const posts = await getCollection('blog');
+    const works = await getCollection('work');
 	return rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
@@ -12,5 +13,9 @@ export async function GET(context) {
 			...post.data,
 			link: `/blog/${post.slug}/`,
 		})),
+        items: works.map((post) => ({
+            ...post.data,
+            link: `/works/${post.slug}`,
+        })),
 	});
 }
