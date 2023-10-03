@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import FormattedDate from "@common/FormattedDate.astro";
 
-type Props = CollectionEntry<"work">["data"];
+type Props = CollectionEntry<"blog">["data"];
 
 const { title, pubDate, heroImage } = Astro.props;
 ---
