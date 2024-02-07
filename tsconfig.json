@@ -1,16 +1,3 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "strictNullChecks": true,
-    "allowJs": true,
-    "baseUrl": ".",
-    "paths": {
-      "@widgets/*": ["src/components/widgets/*"],
-      "@common/*": ["src/components/common/*"],
-      "@icon/*": ["src/components/icons/*"],
-      "@content/*": ["src/content/blog/*"],
-      "@layout/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"],
-    }
-  }
+  "extends": "astro/tsconfigs/strict"
 }
