@@ -1,11 +1,23 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header>
-	<nav>
-		
-		
-	</nav>
+<header class="max-lg:grid-cols-2 grid grid-cols-3 py-5 mx-10">
+  <h2 class="text-2xl font-bold flex items-center">{SITE_TITLE}</h2>
+  <nav class="max-lg:justify-end flex justify-center items-center text-lg">
+    <div
+      class="px-8 py-3 flex gap-5 border border-zinc-600 rounded-lg backdrop-blur-md"
+    >
+      <HeaderLink href="">Home</HeaderLink>
+      <HeaderLink href="">About</HeaderLink>
+      <HeaderLink href="">Contact</HeaderLink>
+      <ThemeIcon />
+    </div>
+  </nav>
+  <div class="flex justify-end items-center gap-5">
+    <a href="">X</a>
+    <a href="">Github</a>
+  </div>
 </header>

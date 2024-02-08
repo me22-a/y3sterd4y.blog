@@ -1,6 +1,23 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "strictNullChecks": true
+    "jsx": "react-jsx",
+    "strictNullChecks": true,
+    "baseUrl": "D:/Projects/y3sterd4y.blog",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@contents/*": [
+        "src/content/*"
+      ],
+      "@icons/*": [
+        "src/icons/*"
+      ]
+    },
+    "jsxImportSource": "react"
   }
 }
