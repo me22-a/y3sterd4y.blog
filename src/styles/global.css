@@ -7,10 +7,12 @@
 
 html {
   font-family: "Inter", sans-serif;
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
   scroll-behavior: smooth;
 }
-
+html::-webkit-scrollbar {
+  display: none;
+}
 
 html.dark {
   background-color: black;

@@ -15,7 +15,7 @@
         "src/content/*"
       ],
       "@icons/*": [
-        "src/icons/*"
+        "src/components/icons/*"
       ]
     },
     "jsxImportSource": "react"
